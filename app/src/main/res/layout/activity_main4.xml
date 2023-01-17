@@ -20,55 +20,66 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar2"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbar2"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbar2"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbar2"
-        app:layout_constraintVertical_bias="0.407"
-        tools:ignore="MissingConstraints"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar2"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbar2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbar2"
-        app:layout_constraintVertical_bias="0.407"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="44dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar2"
+        android:id="@+id/imageButton21"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="236dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbar2"
         app:layout_constraintTop_toTopOf="@+id/materialToolbar2"
-        app:layout_constraintVertical_bias="0.407"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/talkicon"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:onClick="pagemove"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar2"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbar2"
-        app:layout_constraintHorizontal_bias="0.592"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        android:id="@+id/imageButton27"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton21"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/materialToolbar2"
-        app:layout_constraintVertical_bias="0.407"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/locationicon"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton27"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbar2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar2"
+        app:srcCompat="@drawable/homeicon"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton25"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbar2"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar2"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/personicon"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

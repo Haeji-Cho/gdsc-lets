@@ -15,8 +15,8 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        ImageButton imageButton=findViewById(R.id.imageButton);
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        ImageButton imageButton3=findViewById(R.id.imageButton3);
+        imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),MainActivity.class);
@@ -24,8 +24,8 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-        Button button5=findViewById(R.id.button5);
-        button5.setOnClickListener(new View.OnClickListener() {
+        ImageButton imageButton4=findViewById(R.id.imageButton4);
+        imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),MainActivity3.class);
