@@ -25,6 +25,15 @@ public class loginPage extends AppCompatActivity {
             }
         });
 
+        Button button13=findViewById(R.id.button13);
+        button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
