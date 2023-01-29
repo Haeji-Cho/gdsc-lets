@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/dateResult"
-                android:layout_marginLeft="280dp"
+                android:layout_marginLeft="285dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="selected Date" />
