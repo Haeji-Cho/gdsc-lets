@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reserve3Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="What is your name?" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Please write your real name for better identification" />
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar7"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#D9D9D9"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <EditText
+                android:id="@+id/reserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:text="Name" />
+            <TextView
+                android:id="@+id/nameResult"
+                android:layout_marginLeft="280dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reservation name" />
+            <ImageButton
+                android:id="@+id/next1"
+                android:layout_marginLeft="280dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:adjustViewBounds="true"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:text = "Next"
+                app:srcCompat="@drawable/next"
+                tools:ignore="MissingConstraints" />
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar11"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#D9D9D9"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="When will you exercise?" />
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar8"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#D9D9D9"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <CalendarView
+                android:id="@+id/datePick"
+                android:background="@drawable/layoutdesign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dateResult"
+                android:layout_marginLeft="280dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="selected Date" />
+
+            <ImageButton
+                android:id="@+id/next2"
+                android:layout_marginLeft="280dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:adjustViewBounds="true"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:text = "Next"
+                app:srcCompat="@drawable/next"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar12"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#D9D9D9"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="How many people?" />
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar9"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#D9D9D9"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Adult" />
+
+                <Button
+                    android:id="@+id/btnm1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/adCnt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/btnp1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Child" />
+                <Button
+                    android:id="@+id/btnm2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/chCnt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/btnp2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Elderly" />
+                <Button
+                    android:id="@+id/btnm3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/elCnt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/btnp3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Disabled" />
+                <Button
+                    android:id="@+id/btnm4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/diCnt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/btnp4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/memberResult"
+                android:layout_marginLeft="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="member" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar10"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#F5F5F5"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="260dp"
+                    android:backgroundTint="#FF5C00"
+                    android:text="Save" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
