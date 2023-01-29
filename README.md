@@ -18,7 +18,7 @@
 	<img src="https://img.shields.io/badge/MySQL-1572B6?style=flat&logo=MySQL&logoColor=white" />
 </div>
 
-## 🔊 서비스 소개
+## 💪 서비스 소개
 
 Lets - 
 
