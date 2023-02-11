@@ -27,7 +27,7 @@ public class ReserveActivity extends AppCompatActivity {
         imageButton20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent=new Intent(getApplicationContext(), Home1Activity.class);
                 startActivity(intent);
             }
         });

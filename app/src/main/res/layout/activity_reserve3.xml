@@ -7,7 +7,6 @@
     tools:context=".Reserve3Activity">
 
     <ScrollView
-        android:id="@+id/rScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +51,12 @@
                 android:inputType="textPersonName"
                 android:layout_marginLeft="10dp"
                 android:text="Name" />
-
+            <TextView
+                android:id="@+id/nameResult"
+                android:layout_marginLeft="280dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reservation name" />
             <ImageButton
                 android:id="@+id/next1"
                 android:layout_marginLeft="280dp"
@@ -74,7 +78,7 @@
                 android:theme="?attr/actionBarTheme" />
 
             <TextView
-                android:id="@+id/dateExp"
+                android:id="@+id/textView39"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:textSize="20dp"
@@ -95,6 +99,58 @@
                 android:background="@drawable/layoutdesign"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.widget.Button
+                    android:id="@+id/button21"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/time_button"
+                    android:text="9:00-10:00"
+                    android:textColor="@color/black" />
+
+                <android.widget.Button
+                    android:id="@+id/button25"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/time_button"
+                    android:text="10:00-11:00"
+                    android:textColor="@color/black" />
+
+                <android.widget.Button
+                    android:id="@+id/button20"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/time_button"
+                    android:text="11:00-12:00"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dateResult"
+                android:layout_marginLeft="285dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="selected Date" />
 
             <ImageButton
                 android:id="@+id/next2"
@@ -118,7 +174,7 @@
                 android:theme="?attr/actionBarTheme" />
 
             <TextView
-                android:id="@+id/memExp"
+                android:id="@+id/textView40"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:textSize="20dp"
@@ -147,7 +203,7 @@
                     android:layout_weight="1"
                     android:text="Adult" />
 
-                <Button
+                <android.widget.Button
                     android:id="@+id/btnm1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -167,7 +223,7 @@
                     android:layout_weight="0"
                     android:text="0" />
 
-                <Button
+                <android.widget.Button
                     android:id="@+id/btnp1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -194,7 +250,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Child" />
-                <Button
+                <android.widget.Button
                     android:id="@+id/btnm2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -214,7 +270,7 @@
                     android:layout_weight="0"
                     android:text="0" />
 
-                <Button
+                <android.widget.Button
                     android:id="@+id/btnp2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -241,7 +297,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:text="Elderly" />
-                <Button
+                <android.widget.Button
                     android:id="@+id/btnm3"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -261,7 +317,7 @@
                     android:layout_weight="0"
                     android:text="0" />
 
-                <Button
+                <android.widget.Button
                     android:id="@+id/btnp3"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -287,7 +343,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:text="Disabled" />
-                <Button
+                <android.widget.Button
                     android:id="@+id/btnm4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -307,7 +363,7 @@
                     android:layout_weight="0"
                     android:text="0" />
 
-                <Button
+                <android.widget.Button
                     android:id="@+id/btnp4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -322,6 +378,12 @@
                     android:textSize="20sp" />
 
             </LinearLayout>
+            <TextView
+                android:id="@+id/memberResult"
+                android:layout_marginLeft="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="member" />
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/materialToolbar10"
