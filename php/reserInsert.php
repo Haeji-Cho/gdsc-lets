@@ -15,11 +15,10 @@
 
     $statement = mysqli_prepare($con, "INSERT INTO reservation (user_id, reser_name, member,
                                             reser_date, start_time, end_time) VALUES (?,?,?,?,?,?)");
-    mysqli_stmt_bind_param($statement, "isisss",
+    mysqli_stmt_bind_param($statement, "ssisss",
                             $userId, $reserName, $member, $reserDate, $startTime, $endTime);
-    mysqli_stmt_execute($statement);    //check
+    mysqli_stmt_execute($statement);
     mysqli_stmt_store_result($statement);
-//    mysqli_stmt_bind_result($statement, $userId);
 
     $response = array();
     $response["success"] = false;
