@@ -192,8 +192,6 @@ public class Reserve3Activity extends AppCompatActivity {
                 reserInsert task = new reserInsert();
                 task.execute("http://" + IP_ADDRESS + "/reserInsert.php",
                         user_id, reser_name, member, reser_date, start_time, end_time);
-
-
             }
         });
     }

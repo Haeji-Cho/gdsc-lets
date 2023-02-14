@@ -22,7 +22,7 @@
             android:exported="true" />
         <activity
             android:name=".Reserve2Activity"
-            android:exported="false"></activity>
+            android:exported="false"/>
         <activity
             android:name=".ReserveActivity"
             android:exported="false" />
@@ -69,15 +69,15 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity2"
-            android:exported="false">
+            android:name=".Initial2Activity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
+            android:name=".Initial1Activity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
