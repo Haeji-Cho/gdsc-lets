@@ -93,7 +93,7 @@ public class Initial2Activity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(), Home3Activity.class);
                 startActivity(intent);
                 //test용 (수정 필요)
                 String user_id = "12@daum.net";
