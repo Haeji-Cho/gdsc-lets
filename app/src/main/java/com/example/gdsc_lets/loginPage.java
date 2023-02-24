@@ -52,6 +52,8 @@ public class loginPage extends AppCompatActivity {
                 }else {
                     UserApiClient.getInstance().loginWithKakaoAccount(loginPage.this, callback);
                 }
+                Intent intent=new Intent(getApplicationContext(), Initial1Activity.class);
+                startActivity(intent);
             }
         });
 
