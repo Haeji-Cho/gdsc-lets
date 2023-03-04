@@ -16,6 +16,24 @@
         android:theme="@style/Theme.Gdsc_lets"
         tools:targetApi="31">
         <activity
+            android:name=".NameOfBusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerLicense1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ReserveDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Gather2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Gather1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Home5Activity"
             android:exported="false" />
         <activity
